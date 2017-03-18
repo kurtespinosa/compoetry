@@ -1,0 +1,217 @@
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcurand.so locally
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 0 with properties: 
+name: Tesla K40c
+major: 3 minor: 5 memoryClockRate (GHz) 0.8755
+pciBusID 0000:02:00.0
+Total memory: 11.17GiB
+Free memory: 11.10GiB
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:126] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:717] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40c, pci bus id: 0000:02:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 1.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 2.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 4.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 8.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 16.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 32.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 64.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 128.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 256.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 512.0KiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 1.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 2.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 4.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 8.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 16.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 32.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 64.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 128.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 256.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 512.00MiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 1.00GiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 2.00GiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 4.00GiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 8.00GiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:51] Creating bin of max chunk size 16.00GiB
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:73] Allocating 10.54GiB bytes.
+I tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:83] GPU 0 memory begins at 0x205ba0000 extends to 0x4a8a83334
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_3/_44 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_210_save/restore_slice_3", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_18/_48 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_253_save/restore_slice_18", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_21/_50 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_265_save/restore_slice_21", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_all/NoOp_1/_53 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_288_save/restore_all/NoOp_1", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_6/_46 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_216_save/restore_slice_6", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_13 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_13/tensor_name, save/restore_slice_13/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_14 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_14/tensor_name, save/restore_slice_14/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_15 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_15/tensor_name, save/restore_slice_15/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_16 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_16/tensor_name, save/restore_slice_16/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice/tensor_name, save/restore_slice/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_1 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_1/tensor_name, save/restore_slice_1/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_23 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_23/tensor_name, save/restore_slice_23/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_17 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_17/tensor_name, save/restore_slice_17/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_18 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_18/tensor_name, save/restore_slice_18/shape_and_slice)]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_12/_42 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_197_save/restore_slice_12", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_19 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_19/tensor_name, save/restore_slice_19/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_20 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_20/tensor_name, save/restore_slice_20/shape_and_slice)]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_9/_40 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_191_save/restore_slice_9", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_21 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_21/tensor_name, save/restore_slice_21/shape_and_slice)]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice/_38 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_171_save/restore_slice", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_1/_36 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_164_save/restore_slice_1", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_2/_34 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_156_save/restore_slice_2", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_22/_32 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_151_save/restore_slice_22", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_23/_30 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_146_save/restore_slice_23", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_22 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_22/tensor_name, save/restore_slice_22/shape_and_slice)]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_19/_28 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_141_save/restore_slice_19", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_20/_26 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_136_save/restore_slice_20", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_7/_24 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_113_save/restore_slice_7", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_8/_22 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_108_save/restore_slice_8", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_4/_20 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_103_save/restore_slice_4", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_5/_18 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_98_save/restore_slice_5", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_13/_16 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_93_save/restore_slice_13", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_14/_14 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_88_save/restore_slice_14", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_10/_12 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_83_save/restore_slice_10", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x270aec0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_11/_10 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_78_save/restore_slice_11", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_2 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_2/tensor_name, save/restore_slice_2/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_3 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_3/tensor_name, save/restore_slice_3/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_4 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_4/tensor_name, save/restore_slice_4/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_5 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_5/tensor_name, save/restore_slice_5/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_6 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_6/tensor_name, save/restore_slice_6/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_7 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_7/tensor_name, save/restore_slice_7/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_8 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_8/tensor_name, save/restore_slice_8/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_9 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_9/tensor_name, save/restore_slice_9/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_10 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_10/tensor_name, save/restore_slice_10/shape_and_slice)]]
+W tensorflow/core/kernels/io.cc:220] Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+W tensorflow/core/common_runtime/executor.cc:1102] 0x1c1abd0 Compute status: Not found: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_11 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_11/tensor_name, save/restore_slice_11/shape_and_slice)]]
+Traceback (most recent call last):
+  File "generate.py", line 32, in <module>
+    saver.restore(sess, ckpt.model_checkpoint_path)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/training/saver.py", line 1008, in restore
+    {self.saver_def.filename_tensor_name: save_path})
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 315, in run
+    return self._run(None, fetches, feed_dict)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 511, in _run
+    feed_dict_string)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 564, in _do_run
+    target_list)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 586, in _do_call
+    e.code)
+tensorflow.python.framework.errors.NotFoundError: Unsuccessful TensorSliceReader constructor: Failed to find any matching files for data/example/poet.model.ckpt
+	 [[Node: save/restore_slice_12 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save/Const_0, save/restore_slice_12/tensor_name, save/restore_slice_12/shape_and_slice)]]
+	 [[Node: save/restore_slice_3/_44 = _Recv[client_terminated=false, recv_device="/job:localhost/replica:0/task:0/gpu:0", send_device="/job:localhost/replica:0/task:0/cpu:0", send_device_incarnation=1, tensor_name="edge_210_save/restore_slice_3", tensor_type=DT_FLOAT, _device="/job:localhost/replica:0/task:0/gpu:0"]()]]
+Caused by op u'save/restore_slice_12', defined at:
+  File "generate.py", line 30, in <module>
+    saver = tf.train.Saver(tf.all_variables())
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/training/saver.py", line 784, in __init__
+    restore_sequentially=restore_sequentially)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/training/saver.py", line 454, in build
+    filename_tensor, vars_to_save, restore_sequentially, reshape)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/training/saver.py", line 212, in _AddRestoreOps
+    values = self.restore_op(filename_tensor, vs, preferred_shard)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/training/saver.py", line 127, in restore_op
+    preferred_shard=preferred_shard)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/ops/io_ops.py", line 193, in _restore_slice
+    preferred_shard, name=name)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/ops/gen_io_ops.py", line 271, in _restore_slice
+    preferred_shard=preferred_shard, name=name)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/ops/op_def_library.py", line 655, in apply_op
+    op_def=op_def)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 2040, in create_op
+    original_op=self._default_original_op, op_def=op_def)
+  File "/opt/gridware/apps/gcc/tensorflow/0.7.1/python2.7/gpu/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 1087, in __init__
+    self._traceback = _extract_stack()
+

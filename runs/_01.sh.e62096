@@ -1,0 +1,19 @@
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcurand.so locally
+Traceback (most recent call last):
+  File "generate.py", line 24, in <module>
+    c.load(c.work_dir)
+  File "/mnt/scratch-isilon/mbaxwke2/playground/models/lstm-poetry-master/config.py", line 31, in load
+    for name, value in json.load(fh).iteritems():
+  File "/opt/gridware/apps/binapps/anaconda/2.5.0/lib/python2.7/json/__init__.py", line 291, in load
+    **kw)
+  File "/opt/gridware/apps/binapps/anaconda/2.5.0/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/opt/gridware/apps/binapps/anaconda/2.5.0/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/opt/gridware/apps/binapps/anaconda/2.5.0/lib/python2.7/json/decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded

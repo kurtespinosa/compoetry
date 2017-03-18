@@ -1,0 +1,9 @@
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:105] successfully opened CUDA library libcurand.so locally
+Traceback (most recent call last):
+  File "generate.py", line 25, in <module>
+    with open(os.path.join(c.work_dir, 'chars_vocab.pkl'), 'rb') as f:
+IOError: [Errno 2] No such file or directory: 'data/example/chars_vocab.pkl'
